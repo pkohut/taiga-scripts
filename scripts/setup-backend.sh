@@ -17,7 +17,7 @@ SITES["front"]["domain"] = "localhost:8000"
 DEBUG = True
 PUBLIC_REGISTER_ENABLED = True
 
-DEFAULT_FROM_EMAIL = "no-reply@example.com"
+DEFAULT_FROM_EMAIL = "taiga@team4eng.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
