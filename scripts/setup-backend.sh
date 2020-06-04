@@ -17,7 +17,7 @@ SITES["front"]["domain"] = "localhost:8000"
 DEBUG = True
 PUBLIC_REGISTER_ENABLED = True
 
-DEFAULT_FROM_EMAIL = "no-reply@example.com"
+DEFAULT_FROM_EMAIL = "taiga@team4eng.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -51,7 +51,7 @@ if [ ! -e ~/taiga-back ]; then
     python manage.py collectstatic --noinput
     python manage.py loaddata initial_user
     python manage.py loaddata initial_project_templates
-    python manage.py sample_data
+    # python manage.py sample_data
     python manage.py rebuild_timeline --purge
 
     deactivate
