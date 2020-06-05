@@ -31,10 +31,10 @@ EOF
 
 if [ ! -e ~/taiga-back ]; then
     createdb-if-needed taiga
-    git clone https://github.com/taigaio/taiga-back.git taiga-back
+    git clone https://github.com/pkohut/taiga-back.git taiga-back
 
     pushd ~/taiga-back
-    git checkout -f stable
+    git checkout -f t4dev
 
     # rabbit-create-user-if-needed taiga taiga  # username, password
     # rabbit-create-vhost-if-needed taiga
@@ -59,7 +59,7 @@ if [ ! -e ~/taiga-back ]; then
 else
     pushd ~/taiga-back
     git fetch
-    git checkout -f stable
+    git checkout -f t4dev
     git reset --hard origin/stable
 
     workon taiga
