@@ -51,7 +51,7 @@ if [ ! -e ~/taiga-back ]; then
     python manage.py collectstatic --noinput
     python manage.py loaddata initial_user
     python manage.py loaddata initial_project_templates
-    python manage.py sample_data
+    #python manage.py sample_data
     python manage.py rebuild_timeline --purge
 
     deactivate
