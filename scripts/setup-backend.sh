@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BACKEND_VERSION="stable"
+BACKEND_VERSION="t4dev"
 
 pushd ~
 
@@ -60,7 +60,7 @@ else
     pushd ~/taiga-back
     git fetch
     git checkout -f t4dev
-    git reset --hard origin/stable
+    git reset --hard origin/t4dev
 
     workon taiga
     pip install -r requirements.txt
