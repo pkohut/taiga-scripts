@@ -20,6 +20,10 @@ source ./scripts/setup-postgresql.sh
 source ./scripts/setup-buildessential.sh
 source ./scripts/setup-python.sh
 
+# Setup and install Ruby / nvm
+source ./scripts/setup-ruby.sh
+source ./scripts/setup-nvm.sh
+
 # Setup Taiga
 source ./scripts/setup-frontend.sh
 source ./scripts/setup-backend.sh
